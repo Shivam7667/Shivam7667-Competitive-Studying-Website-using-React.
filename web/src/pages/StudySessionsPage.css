@@ -1,0 +1,94 @@
+/* General page styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  .study-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Title */
+  .study-title {
+    text-align: center;
+    color: #004085;
+    margin-bottom: 20px;
+    font-size: 2.2rem;
+  }
+  
+  /* Study materials list */
+  .study-materials-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Material items */
+  .study-material-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    transition: box-shadow 0.3s ease;
+    background-color: #fdfdfd;
+  }
+  
+  .study-material-item:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Material image */
+  .material-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
+    margin-right: 15px;
+    object-fit: cover;
+  }
+  
+  /* Material info */
+  .material-info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Material title link */
+  .material-title {
+    font-size: 1.2rem;
+    color: #0056b3;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .material-title:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 768px) {
+    .study-material-item {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .material-image {
+      width: 100%;
+      height: auto;
+      margin-bottom: 10px;
+    }
+  
+    .material-title {
+      font-size: 1.1rem;
+    }
+  }
+  

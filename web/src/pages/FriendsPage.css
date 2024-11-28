@@ -1,0 +1,54 @@
+/* FriendsPage.css */
+
+/* Container for the friends page */
+.friends-page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #f5f5f5;
+    min-height: 100vh;
+  }
+  
+  /* Title Styling */
+  .friends-page-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  
+  /* Content Wrapper for better layout */
+  .friends-page-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+  }
+  
+  /* Add some space between components */
+  .friends-page-content > * {
+    margin-bottom: 30px;
+    width: 100%;
+  }
+  
+  /* Responsive Design for smaller screens */
+  @media (max-width: 768px) {
+    .friends-page-container {
+      padding: 15px;
+    }
+  
+    .friends-page-title {
+      font-size: 2rem;
+      margin-bottom: 30px;
+    }
+  
+    .friends-page-content {
+      width: 100%;
+      flex-direction: column;
+    }
+  }
+  
